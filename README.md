@@ -1,5 +1,7 @@
 test-front-end-beta
+
 ///////////////////////////////////////
+
 test-front-end v1.1
 
 #1 Removed inline styling and added new class .bottom-slider-controls-background for the background color of the bottom slider carousel controls.
