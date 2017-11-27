@@ -1,0 +1,3 @@
+#This project relies heavily on CSS3, especially CSS animations and transforms.
+
+Not ready yet! Bizzare theme is under construction...

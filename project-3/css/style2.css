@@ -1,0 +1,364 @@
+@font-face {
+   font-family: horror;
+   src: url(../font/bodybag.ttf) format('truetype');;
+}
+
+@font-face {
+   font-family: horror-2;
+   src: url(../font/gorefont.ttf) format('truetype');;
+}
+
+
+body {
+	margin: 0;
+	padding: 0; 
+	width: 100%;
+	height: auto;
+    position: relative;
+	background: url(../img/creepy-background.jpg);
+	font-family: horror-2;
+	background-attachment: fixed;
+}
+
+.nav{
+	background-color: black;
+	padding: 20px;
+	border-bottom: 3px solid red;
+}
+
+ul.nav-pills {
+      top: 25px;
+      position: fixed;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+	background-color: orange;
+}
+
+.nav > li > a {
+	color: orange;
+}	
+  
+h1 {
+	/* font-size: 80px; */
+	color: orange;
+	text-shadow: 2px 2px 3px #80d4ff;
+}  
+
+.footer-btn{
+	width: 300px;
+	height: 100px;
+	margin-top: 20px;
+	margin-bottom: 90px;
+	background: url(../img/wood.jpg) no-repeat;
+	font-size: 24px;
+	border: none;
+	color: gray;
+	position: relative;
+	border-radius: 15px;
+	transform-origin: top left;
+	transform-style: preserve-3D;
+	 -webkit-transition-property: rotateZ();
+       -moz-transition-property: rotateZ();
+         -o-transition-property: rotateZ();
+            transition-property: rotateZ();
+    -webkit-transition-duration: 2s;
+       -moz-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+    -webkit-transition-timing-function: rotateZ();
+       -moz-transition-timing-function: rotateZ();
+         -o-transition-timing-function: rotateZ();
+            transition-timing-function: rotateZ();
+}
+
+.footer-btn:hover{
+	transform: rotateZ(18deg);
+}
+
+.btn-span{
+	background: url(../img/nail.png) no-repeat;
+	left: 0;
+	top: -5px;
+	position: absolute;
+	width: 12px;
+	height: 15px;
+}
+
+.btn-span2{
+	background: url(../img/web.png) no-repeat;
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+
+.footer-btn-collapse{
+	width: 90%;
+	color: orange;
+	margin: auto;
+	background-color: #202020;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#section1 {
+	min-height: 500px; 
+	color: red; 
+	background:  url(../img/cemetary.jpg) no-repeat;
+	padding-top: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+#section2 {
+	min-height: 700px; 
+	color: red; 
+	background:  url(../img/forest-black.jpg) no-repeat;
+	padding-top: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#section3 {
+	min-height: 500px; 
+	color: red; 
+	background:  url(../img/creepy-woman.jpg) no-repeat; 
+	padding-top: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+	opacity: 0.7;
+}
+
+ 
+.flamegroup {
+    top: 25px;
+	left: 10px;
+    position:absolute;
+    width:185px; 
+    height:126px;
+		
+}
+.flame {
+    margin:0 auto;
+    position:absolute;
+    width:185px; 
+    height:116px;
+    background:url(../img/flames.png) 0px 0px no-repeat;
+	border-radius: 40px 15px 15px 15px;
+}
+
+.fl1 {
+   -webkit-animation: flicker 1.6s infinite;
+    top:10px;
+    left:10px
+}
+.fl2 {
+   -webkit-animation: flicker 1s infinite;
+    top:5px;
+    left:20px
+}
+.fl3 {
+   -webkit-animation: flicker 1.4s infinite;
+
+    
+}
+
+@-webkit-keyframes flicker { /* flame pulses */
+		0% {
+			background-position: 0px 0px; 
+			opacity:.8; 
+	}
+		25% {
+			background-position: 0px 0px;
+	}
+		25.1% {
+			background-position: -100px 0px;        
+	}
+		50% {
+			background-position: -100px 0px;
+			opacity:.4
+	}
+		50.1% {
+			background-position: -200px 0px;
+	}
+		75% {
+			background-position: -200px 0px;
+			
+	}
+		75.1% {
+			background-position: -100px 0px;
+	}
+		100% {
+			background-position: -100px 0px;
+			opacity:.8
+	}
+}
+
+@keyframes flicker { /* flame pulses */
+		0% {
+			background-position: 0px 0px; 
+			opacity:.8; 
+	}
+		25% {
+			background-position: 0px 0px;
+	}
+		25.1% {
+			background-position: -100px 0px;        
+	}
+		50% {
+			background-position: -100px 0px;
+			opacity:.4
+	}
+		50.1% {
+			background-position: -200px 0px;
+	}
+		75% {
+			background-position: -200px 0px;
+			
+	}
+		75.1% {
+			background-position: -100px 0px;
+	}
+		100% {
+			background-position: -100px 0px;
+			opacity:.8
+	}
+}
+
+
+
+.drop {
+	z-index: 9999;
+    display: block;
+	background: red;
+    background: radial-gradient(#ff0000, #cc0000, #800000);
+    width: 20px;
+    height: 20px;
+    margin: 197px 0px 0px 120px;
+    position: fixed;
+    -webkit-animation: drop 1.9s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    border-radius: 50%;
+    -webkit-transform: scale(0.9, 1.2) rotate(45deg);
+    box-shadow: 1px 1px 7px #1a1a1a;
+}
+@-webkit-keyframes drop {
+    0% {
+        transform:scale(0.1, 0.1) rotate(45deg);
+        top:25px;
+        border-top-left-radius: 50%;
+    }
+    10% {
+        top:28px;
+        border-top-left-radius: 60%;
+    }
+    20% {
+        top:30px;
+        border-top-left-radius: 70%;
+    }
+    30% {
+        top:32px;
+        border-top-left-radius: 80%;
+    }
+    40% {
+        top:35px;
+        border-top-left-radius: 90%;
+    }
+    90% {
+        top:42px;
+        border-top-left-radius: 0;
+    }
+    95% {
+        border-top-left-radius: 0;
+        transform:scale(0.7, 1) rotate(45deg);
+    }
+    100% {
+        top:300px;
+        border-top-left-radius: 50%;
+        transform:scale(4, 0.1) rotate(45deg);
+	
+    }
+}
+
+.lightning{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%; 
+	background: url(../img/forrest-lightning.jpg);
+	background-origin: content-box;
+  /* background-attachment: fixed; */
+  /* -webkit-filter: brightness(3); */
+	filter: brightness(3);
+	-o-filter: brightness(3);
+	-moz-filter: brightness(3);
+
+}
+
+/*Now just a opacity animation*/
+.flashit{
+	-webkit-animation: flash ease-out 7s 3;
+	-moz-animation: flash ease-out 7s 3;
+	animation: flash ease-out 7s 3;
+	/* animation-delay: 0s; */
+}
+
+@-webkit-keyframes flash {
+	0% { 
+		opacity: 0; 
+	} 
+	92% { 
+		opacity: 0;
+	}
+	93% { 
+		opacity: 0.6; 
+	}
+	94% {
+		opacity: 0.2; 
+	}
+	96% { 
+		opacity: 0.9; 
+	} 
+	100% { 
+		opacity: 0; 
+	}
+}
+
+@keyframes flash {
+	0% { 
+		opacity: 0; 
+	} 
+	92% { 
+		opacity: 0;
+	}
+	93% { 
+		opacity: 0.6; 
+	}
+	94% {
+		opacity: 0.2; 
+	}
+	96% { 
+		opacity: 0.9; 
+	} 
+	100% { 
+		opacity: 0; 
+	}
+}
+
+@media screen and (max-width: 810px) {
+    #section1, #section2, #section3 {
+        margin: auto;
+    }
+	
+	.footer-btn{
+		width: 200px;
+		height: 66px;
+		margin-top: 20px;
+		background-color: #53b8c4
+	}
+
+}
