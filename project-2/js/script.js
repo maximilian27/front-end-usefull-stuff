@@ -23,24 +23,21 @@
 		$('#view-text').html($('#view-text').html() == 'VIEW MORE' ? 'SHOW LESS..' : 'VIEW MORE');	
 	}
 	
-// large buttons, toggle between plus/minus symbol onclick
+// large buttons, toggle between plus/minus symbol onclick, drop-shadow filter
 
-//////////////////////// test
-	// var clicks = 0; 
-	// $('.btn-large').click(function() { 
-		// (clicks % 2 == 0) ? $('.span-large-btn', this).css('color', 'red') : $('.span-large-btn', this).css('color', 'blue'); 
-		// ++clicks; 
-	// }); 
+
 ////////////////////////////////////////	
 	$(document).ready(function() {
-		var clicks = 0;
 		$('.btn-large').click(function() {
-			if (clicks % 2 == 0){
-				$('.span-large-btn-4', this).css('background-image', 'url(img/minus.png)');
-			} else{
-				$('.span-large-btn-4', this).css('background-image', 'url(img/plus.png)');
+			// $('.span-large-btn-4', this).html($('.span-large-btn-4', this).html() == '+' ? '-' : '+');
+			if ($('.span-large-btn-4', this).html() == '+') {
+				$('.span-large-btn-4', this).html('-');
+				$('.btn-large', this).addClass('btn-large-active');	//drop-shadow filter	
 			}
-				++clicks;
+			else {
+				$('.span-large-btn-4', this).html('+');
+				$('.btn-large', this).removeClass('btn-large-active');	
+			}
 		});	
 	});		
 	
