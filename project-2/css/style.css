@@ -312,19 +312,15 @@ body {
 }
 
 .span-large-btn-4 {
-	background-image: url(../img/plus.png);
-	background-repeat: no-repeat;
-	right: 0;
+	right: 30px;
+	color: #53b8c4;
+	font-size: 26px;
 	top: 33px;
 	position: absolute;
-	width: 50px;
-	height: 50px;
+
 }
 
 .btn-large:hover> .span-large-btn {
-	left: -1px;
-	top: -1px;
-	bottom: -1px;
 	color: white;
 	background-color: black;
 	font-size: 65px;
@@ -333,18 +329,8 @@ body {
 	padding-top: 5px;
 }
 
-.btn-large:focus > .span-large-btn-4 {
-	background-repeat: no-repeat;
-	right: 0;
-	top: 33px;
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	
-}
 
-
-.btn-large:focus  {
+.btn-large-active  {
 	-webkit-filter: drop-shadow(9px 5px 15px  #888888);
 	filter: drop-shadow(9px 5px 15px  #888888);
 }
@@ -454,10 +440,6 @@ a {
 		
 	}
 	
-	.span-large-btn-4 {
-		width: 50px;
-		height: 50px;
-	}
 	
 	.lg-btn-collapse {
 		max-width: 270px;
