@@ -20,6 +20,6 @@
 	}
 	
 ///bizzare theme////////////////////////////////	
-	function bizzare(){
+	function funky(){
 		alert("I'm working on it..");
 	}
