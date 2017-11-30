@@ -38,6 +38,27 @@ ul.nav-pills {
 .nav > li > a {
 	color: orange;
 }	
+
+.dropdown-menu {
+	background-color: black;
+}
+
+.dropdown-menu > li > a {
+	color: orange;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: orange;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+	color: orange;
+}
+
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover {
+    border-color: orange;
+}
   
 h1 {
 	/* font-size: 80px; */

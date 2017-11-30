@@ -16,8 +16,9 @@ ul.nav-pills {
       position: fixed;
 }
   
-.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
-	background-color: #53b8c4;
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+	border-color: #53b8c4;
 }
 
 .nav > li > a {
@@ -27,6 +28,19 @@ ul.nav-pills {
 .dropdown-menu > li > a {
 	color: #53b8c4;
 }	
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #53b8c4;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+	color: #53b8c4;
+}
+
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover {
+    border-color: #53b8c4;
+}
 
 .footer-btn{
 	width: 300px;
