@@ -1,0 +1,262 @@
+@font-face {
+   font-family: graffiti;
+   src: url(../font/elfont.ttf) format('truetype');;
+}
+
+body {
+	margin: 0;
+	padding: 0; 
+	width: 100%;
+	height: auto;
+    position: relative;
+	background: url(../img/wall-background.jpg) no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+ul.nav-pills {
+      top: 25px;
+      position: fixed;
+}
+  
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+	border-color: #53b8c4;
+}
+
+.nav > li > a {
+	color: white;
+}	
+
+.dropdown-menu > li > a {
+	color: #53b8c4;
+}	
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #53b8c4;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+	color: #53b8c4;
+}
+
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover {
+    border-color: #53b8c4;
+}
+
+h1 {
+	font-family: graffiti;
+	color: #53b8c4;
+	text-shadow: 3px 4px 2px yellow;
+	-webkit-filter: drop-shadow(6px 6px 2px orange);
+	filter: drop-shadow(6px 6px 2px orange);
+	margin:500px 0px 0px 200px
+	position: relative;
+	-webkit-animation: type 5s steps(60, end);
+    animation: type 5s steps(60, end);
+	width: 420px;
+    white-space:nowrap;
+    overflow: hidden;
+	font-size: 100px;
+	opacity: 0.95;
+}
+
+@keyframes type {
+    from { width: 0; };
+	to { width: 100% };
+}
+
+@-webkit-keyframes type {
+    from { width: 0; };
+	to { width: 100% };
+}
+
+.drop {
+	z-index: 1;
+    display: block;
+	background: #80dfff;
+    background: radial-gradient(#80dfff, #b3ecff, #e6f9ff);
+    width: 20px;
+    height: 20px;
+    margin: 175px 0px 0px 80px;
+    position: fixed;
+	border-radius: 50%;
+    -webkit-animation: drop 1.2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform: scale(0.9, 1.2) rotate(45deg);
+    box-shadow: 1px 1px 7px #1a1a1a;
+}
+@-webkit-keyframes drop {
+    0% {
+        transform:scale(0.1, 0.1) rotate(45deg);
+        top:25px;
+        border-top-left-radius: 50%;
+    }
+    10% {
+        top:28px;
+        border-top-left-radius: 60%;
+    }
+    20% {
+        top:30px;
+        border-top-left-radius: 70%;
+    }
+    30% {
+        top:32px;
+        border-top-left-radius: 80%;
+    }
+    40% {
+        top:35px;
+        border-top-left-radius: 90%;
+    }
+    90% {
+        top:42px;
+        border-top-left-radius: 0;
+    }
+    95% {
+        border-top-left-radius: 0;
+        transform:scale(0.7, 1) rotate(45deg);
+    }
+    100% {
+        top:300px;
+        border-top-left-radius: 50%;
+        transform:scale(4, 0.1) rotate(45deg);
+	
+    }
+}
+
+.info-cls {
+	position: fixed;
+    display:block;
+	overflow: hidden;
+	border: none;
+    width:200px;
+    height:140px;
+    top: 345px;
+	left: 25px !important;
+    position:fixed;
+    -webkit-animation: test 4s ease-in;
+    -webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 3s;
+	-webkit-filter: drop-shadow(5px 5px 3px yellow);
+	filter: drop-shadow(5px 5px 3px yellow);
+}
+
+@-webkit-keyframes test {
+	0% {
+		background-image: url(../img/rose1.png);
+	}
+	11% {
+		background-image: url(../img/rose2.png);
+	}
+	22% {
+		background-image: url(../img/rose3.png);
+	}
+	33% {
+		background-image: url(../img/rose4.png);
+	}
+	44% {
+		background-image: url(../img/rose5.png);
+	}
+	55% {
+		background-image: url(../img/rose6.png);
+	}
+	70% {
+		background-image: url(../img/rose7.png);
+	}
+	88% {
+		background-image: url(../img/rose8.png);
+	}
+	100% {
+		background-image: url(../img/rose9.png);
+	}
+}
+
+.footer-btn{
+	width: 300px;
+	height: 100px;
+	margin-top: 20px;
+	background-color: #53b8c4;
+	position: relative;
+}
+
+.footer-btn-collapse{
+	width: 90%;
+	color: white;
+	margin: auto;
+	background-color: #202020;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#section1 {
+	font-family: graffiti;
+	font-size: 18px;
+	position: relative;
+	min-height: 500px; 
+	color: black; 
+	background:  url(../img/brick-wall2.jpg) ;
+
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#section2 {
+	font-family: graffiti;
+	font-size: 18px;
+	position: relative;
+	min-height: 500px; 
+	color: black; 
+	background:  url(../img/brick-wall.jpg);
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#section3 {
+	font-family: graffiti;
+	font-size: 18px;
+	position: relative;
+	min-height: 500px; 
+	color: black; 
+	background:  url(../img/brick-wall3.jpg);
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#section2 > p{
+	color: white;
+	text-shadow: 2px 3px 1px black;
+	-webkit-filter: drop-shadow(5px 5px 2px green);
+	filter: drop-shadow(5px 5px 2px green);
+}
+
+#short_description {
+	margin-top: 25em;
+	position: fixed;
+	width: 12em;
+	margin-left: -1em;
+	height: 200px; 
+	display: block; 
+	border: 2px solid #53b8c4; 
+	color: #53b8c4;
+}
+
+@media screen and (max-width: 810px) {
+    #section1, #section2, #section3 {
+        margin: auto;
+    }
+	
+	.footer-btn{
+	width: 200px;
+	height: 66px;
+	margin-top: 20px;
+	background-color: #53b8c4
+	}
+
+}
+  
+ 
