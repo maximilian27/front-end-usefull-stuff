@@ -29,15 +29,14 @@
 ////////////////////////////////////////	
 	$(document).ready(function() {
 		$('.btn-large').click(function() {
-			// $('.span-large-btn-4', this).html($('.span-large-btn-4', this).html() == '+' ? '-' : '+');
+			$('.span-large-btn-4', this).html($('.span-large-btn-4', this).html() == '+' ? '-' : '+');
+			/*if-else
 			if ($('.span-large-btn-4', this).html() == '+') {
 				$('.span-large-btn-4', this).html('-');
-				$('.btn-large', this).addClass('btn-large-active');	//drop-shadow filter	
 			}
 			else {
 				$('.span-large-btn-4', this).html('+');
-				$('.btn-large', this).removeClass('btn-large-active');	
-			}
+			}*/
 		});	
 	});		
 	
