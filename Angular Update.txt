@@ -1,0 +1,22 @@
+1.
+In package.json within the project you will find all the information related to the project dependencies installed. *
+
+2.
+Angular link github repo. Here you will find information on all versions of angular. (https://github.com/angular/angular/blob/master/CHANGELOG.md)
+
+3.
+Must be run:
+
+npm i @ angular / animations @ {version} @ angular / cdk @ {version} @ angular / common @ {version} @ angular / compiler @ {version} @ angular / core @ {version} @ angular / forms @ {version} @ angular / material @ {version} @ angular / platform-browser @ {version} @ angular / platform-browser-dynamic @ {version} @ angular / router @ {version} @ angular / upgrade @ {version} @ angular-devkit / build-angular @ {version} @ angular / cli @ {version} @ angular / compiler-cli @ {version} @ angular / language-service @ {version}
+    
+Additional details
+{version} => the version you want to upgrade. !!! for some dependencies  the versions differ, usually => @ angular / cdk, @ angular / material, @ angular-devkit / build-angular, @ angular / cli. The other version is usually the same as the @ angular / core which you can find in item 1. of the current document. (check all versions of https://www.npmjs.com for all dependencies);
+
+4.
+To be checked for the rest of the dependencies which do not necessarily belong angular core or cli (eg: typescript, core-js etc) if they are compatible;
+
+*The upgrade can be done manually modifying directly in package.json the desired version to a certain dependency and running in the terminal: npm install. It is not as safe as the command from point 3. If this option is chosen, it is recommended to manually delete the node module folder within the project before running: npm install .
+
+5.
+Run in terminal ng build, to verify that all modules have been installed and are running correctly. It is advisable to run also
+ng build –prod –extractCss = false, to check if the production build is ok.
