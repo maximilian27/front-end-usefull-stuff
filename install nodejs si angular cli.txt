@@ -1,0 +1,16 @@
+1.
+It is recommended to initially delete all versions of Node.js installed globally and use a versioning system for Node.js, as
+not all versions of Angular are compatible with all versions of Node.
+The easiest to use is NVM. (https://github.com/coreybutler/nvm-windows) is downloaded directly and has installation kit. There is also a different version
+NVM for Macs;
+
+2.
+Once NVM is installed, begin installing the desired Node.js versions. Run in a command terminal: nvm install {{version}} () => {{version}}
+being the desired version of Node or you can use "latest" which represents the latest stable release. The operation can be repeated as many times as needed for different versions of Node.js.
+
+3.
+Command: nvm use {{version}} is used to switch between installed node versions;
+
+4.
+Install Angular Cli globally with the following command in the terminal: npm install -g @ angular / cli.
+It will install all the necessary dependencies alone and the generation of angular projects can be started. Further details can be found at: https://angular.io/docs
